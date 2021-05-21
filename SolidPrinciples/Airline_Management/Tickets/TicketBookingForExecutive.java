@@ -10,5 +10,8 @@ public class TicketBookingForExecutive extends TicketBookingService{
         super.book();
 
     }
+    public void customMeal(){
+
+    }
 
 }

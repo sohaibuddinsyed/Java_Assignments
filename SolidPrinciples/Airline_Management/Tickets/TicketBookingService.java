@@ -1,4 +1,4 @@
-package SolidPrinciples.Airline_System.Tickets;
+package SolidPrinciples.Airline_Management.Tickets;
 
 import java.util.Scanner;
 

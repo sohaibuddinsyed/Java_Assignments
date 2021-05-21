@@ -1,6 +1,6 @@
-package SolidPrinciples.Airline_System.Employee;
+package SolidPrinciples.Airline_Management.Employes;
 
-import SolidPrinciples.Airline_System.Printer;
+import SolidPrinciples.Airline_Management.Printer;
 
 public class ShowEmployeeDetails {
 
@@ -9,7 +9,7 @@ public class ShowEmployeeDetails {
     ShowEmployeeDetails(Employee e){
         this.e = e;
     }
-    void showEmployeeDetails(){
+    void showEmployeeDetails(Employee e){
         Printer.printer("The employee details are :",
                 e.getId(), e.getName(), e.getPosition(),e.getSalary());
 

@@ -1,6 +1,6 @@
-package SolidPrinciples.Airline_System.Tickets;
+package SolidPrinciples.Airline_Management.Tickets;
 
-import SolidPrinciples.Airline_System.Printer;
+import SolidPrinciples.Airline_Management.Printer;
 
 public class PrintTicketDetails {
 

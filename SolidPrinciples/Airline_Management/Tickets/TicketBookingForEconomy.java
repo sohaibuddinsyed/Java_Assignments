@@ -1,6 +1,4 @@
-package SolidPrinciples.Airline_System.Tickets;
-
-import java.util.Scanner;
+package SolidPrinciples.Airline_Management.Tickets;
 
 public class TicketBookingForEconomy extends TicketBookingService {
     public TicketBookingForEconomy() {

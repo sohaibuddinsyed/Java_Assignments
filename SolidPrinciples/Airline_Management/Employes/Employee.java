@@ -1,4 +1,4 @@
-package SolidPrinciples.Airline_System.Employee;
+package SolidPrinciples.Airline_Management.Employes;
 
 public class Employee {
     private int id;

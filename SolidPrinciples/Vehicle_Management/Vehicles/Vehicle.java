@@ -1,6 +1,8 @@
 package SolidPrinciples.Vehicle_Management.Vehicles;
 
-public abstract class Vehicle {
+import SolidPrinciples.Vehicle_Management.Engines.Engine;
+
+public abstract class Vehicle extends Engine {
     private int tyres;
     private int seats;
     private int mileage;

@@ -13,7 +13,7 @@ Each of these components correspond to actual Airline management elements. The v
 According to this principle, each class should have a single resonsibility and must change only for one reason.
 * In package Employes, in order to perform utility tasks on the Employee class additional classes ``` AddEmployee ``` and ``` ShowEmployeeDetails ``` are created instead of modifying the Employee class with new methods.
 * In package Ticket, classes ```PrintTicketDetails``` and ```TicketBookingService``` take the responsibility of displaying and booking respectively instead of changing the Ticket class. 
-* Further, the class ```Printer``` takes the responsibility of printing all the data members of any given object and further reduces the reson for other printer classes to be modified.
+* Further, the class ```Printer``` takes the responsibility of printing all the data members of any given object and further reduces the reason for other printer classes to be modified.
 * In all the scenarios, the base classes were not added with additional methods and have only one reason to change. Hence, demonstrating the SRP.
 
 ## Open-Closed Principle

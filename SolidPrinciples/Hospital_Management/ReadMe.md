@@ -9,7 +9,7 @@ Both of these components correspond to actual Hospital management elements. The 
 
 ## Single Responsibility 
 According to this principle, each class should have a single resonsibility and must change only for one reason.
-* In package Patients, in order to add details in the Patient classes, `InPatient` and `OutPatient`, additional classes `AddInPatientDetails` and `AddOutPatientDetails` are created instead of modifying the Patient class with new methods.
+* In package Patients, in order to add details in the Patient sub classes additional classes `AddInPatientDetails` and `AddOutPatientDetails` are created instead of modifying the Patient class with new methods.
 * In package Treatments, the different types of appointments are put into separate classes `Consultation` and `Diagnostic` instead of modifying the behaviour of `Appointment`.
 * The globalclass `Printer` takes the responsibility of printing all the data members of any given object and further reduces the reason for other printer classes to be modified.
 In all the scenarios, classes hold SRP and have not more than one reason to change.

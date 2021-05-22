@@ -10,7 +10,7 @@ public class HospitalMain {
        AddInPatientDetails.addInPatientDetails(inPatient);
        ShowPatientDetails.showPatientDetails(inPatient);
 
-       Consultation consultation = new Consultation();
+       Consultation consultation = new Consultation(inPatient);
        consultation.checkUp();
    }
 }

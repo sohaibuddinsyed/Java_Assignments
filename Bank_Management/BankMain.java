@@ -6,7 +6,7 @@ import SolidPrinciples.Bank_Management.Accounts.ModifiedAccount;
 import SolidPrinciples.Bank_Management.Accounts.SavingsAccount;
 import SolidPrinciples.Bank_Management.Transactions.SavingsTransaction;
 
-public class Main {
+public class BankMain {
     public static void main(String[] args){
 
     SavingsAccount s1 = new SavingsAccount(new Account());

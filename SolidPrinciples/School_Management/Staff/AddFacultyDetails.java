@@ -2,15 +2,15 @@ package SolidPrinciples.School_Management.Staff;
 
 import java.util.Scanner;
 
-public class AddEmployeeDetails {
-    private Employee e;
+public class AddFacultyDetails {
+    private Faculty e;
 
-    public AddEmployeeDetails(Employee e){
+    public AddFacultyDetails(Faculty e){
         this.e=e;
     }
 
     static Scanner sc = new Scanner(System.in);
-    public static void addEmployee(Employee e){
+    public static void addFaculty(Faculty e){
 
         System.out.print("\nEnter Employee id:");
         e.setId(sc.nextInt());
@@ -22,5 +22,6 @@ public class AddEmployeeDetails {
         e.setSalary(sc.nextInt());
         System.out.print("\nIs employee on leave:");
         e.setOnLeave(sc.nextBoolean());
+
     }
 }

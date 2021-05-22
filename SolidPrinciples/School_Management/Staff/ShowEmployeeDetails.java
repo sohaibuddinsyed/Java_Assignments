@@ -9,9 +9,14 @@ public class ShowEmployeeDetails {
     ShowEmployeeDetails(Employee e){
         this.e = e;
     }
-    void showEmployeeDetails(Employee e){
-        ObjectPrinter.printer("The employee details are :",
-                e.getId(), e.getName(), e.getPosition(),e.getSalary());
+    void showEmployeeDetails(Faculty faculty){
+        ObjectPrinter.printer("The faculty details are :",
+                faculty.getId(), faculty.getName(), faculty.getPosition(),faculty.getSalary());
+
+    }
+    void showEmployeeDetails(Attender attender){
+        ObjectPrinter.printer("The attender details are :",
+                attender.getId(), attender.getName(), attender.getPosition(),attender.getSalary());
 
     }
 }

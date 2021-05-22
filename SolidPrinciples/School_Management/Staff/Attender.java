@@ -1,4 +1,4 @@
 package SolidPrinciples.School_Management.Staff;
 
-public class Attenders {
+public class Attender extends NonTeachingStaff{
 }

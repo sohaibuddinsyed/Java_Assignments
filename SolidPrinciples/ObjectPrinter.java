@@ -6,5 +6,6 @@ public class ObjectPrinter {
         for(T arg : args){
             System.out.print(arg + " ");
         }
+        System.out.println();
     }
 }

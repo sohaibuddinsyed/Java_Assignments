@@ -6,15 +6,7 @@ import SolidPrinciples.Bank_Management.Accounts.ModifiedAccount;
 import SolidPrinciples.Bank_Management.Accounts.SavingsAccount;
 import SolidPrinciples.Bank_Management.Transactions.SavingsTransaction;
 
-public class BankMain {
-    public static void main(String[] args){
 
-    SavingsAccount s1 = new SavingsAccount(new Account());
-    AccountDetailsPrinter.accountDetailsPrinter(s1);
-    SavingsTransaction.deposit(s1);
-    AccountDetailsPrinter.accountDetailsPrinter(s1);
-    }
-}
 /*
     Create an account. (Types of account -> Savings, FixedDeposit.)
     Modify account details or type, print details.
@@ -33,3 +25,11 @@ public class BankMain {
 
 */
 
+public class BankMain {
+    public static void main(String[] args){
+    SavingsAccount s1 = new SavingsAccount(new Account());
+    AccountDetailsPrinter.accountDetailsPrinter(s1);
+    SavingsTransaction.deposit(s1);
+    AccountDetailsPrinter.accountDetailsPrinter(s1);
+    }
+}

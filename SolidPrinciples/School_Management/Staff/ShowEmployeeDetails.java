@@ -9,12 +9,12 @@ public class ShowEmployeeDetails {
     ShowEmployeeDetails(Employee e){
         this.e = e;
     }
-    void showEmployeeDetails(Faculty faculty){
+    static public void showEmployeeDetails(Faculty faculty){
         ObjectPrinter.printer("The faculty details are :",
                 faculty.getId(), faculty.getName(), faculty.getPosition(),faculty.getSalary());
 
     }
-    void showEmployeeDetails(Attender attender){
+    static public void showEmployeeDetails(Attender attender){
         ObjectPrinter.printer("The attender details are :",
                 attender.getId(), attender.getName(), attender.getPosition(),attender.getSalary());
 

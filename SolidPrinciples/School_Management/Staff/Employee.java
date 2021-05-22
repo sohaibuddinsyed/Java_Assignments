@@ -5,7 +5,6 @@ public abstract class Employee {
     private String name;
     private String position;
     private int salary;
-    private boolean onLeave;
 
     public Employee(){}
     Employee(int id, String name, String position, int salary){
@@ -28,9 +27,7 @@ public abstract class Employee {
     protected void setSalary(int salary){
         this.salary=salary;
     }
-    protected void setOnLeave(boolean onLeave){
-        this.onLeave=onLeave;
-    }
+
     protected int getId(){
         return this.id;
     }
@@ -42,9 +39,6 @@ public abstract class Employee {
     }
     protected int getSalary(){
         return this.salary;
-    }
-    protected boolean isOnLeave(){
-        return this.onLeave;
     }
 
 }

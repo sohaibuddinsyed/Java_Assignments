@@ -13,16 +13,15 @@ public class AddAttenderDetails {
     static Scanner sc = new Scanner(System.in);
     public static void addAttender(Attender e){
 
-        System.out.print("\nEnter Employee id:");
+        System.out.print("\nEnter Attender id:");
         e.setId(sc.nextInt());
-        System.out.print("\nEnter Employee name:");
+        System.out.print("\nEnter Attender name:");
         e.setName(sc.next());
-        System.out.print("\nEnter Employee position:");
+        System.out.print("\nEnter Attender position (role):");
         e.setPosition(sc.next());
-        System.out.print("\nEnter Employee Salary");
+        System.out.print("\nEnter Attender Salary");
         e.setSalary(sc.nextInt());
-        System.out.print("\nIs employee on leave:");
-        e.setOnLeave(sc.nextBoolean());
+
 
     }
 }

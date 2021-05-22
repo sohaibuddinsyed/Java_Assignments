@@ -32,7 +32,7 @@ According to this principle, larger interfaces should be split into smaller ones
 
 ## Dependency Inversion
 The principle of dependency inversion implies modules to be loosely coupled and abstracted so as to have maximum flexibility.
-* In our example, all the three types of Appointment classes, `Consultation`,`Diagnostic` and `Surgery` can take an object of any `Patient` class type.
+* In our example, all the three types of Appointment classes, `Consultation`,`Diagnostic` and `Surgery` can take a variable/object reference of any `Patient` class type instead of creating an object locally.
 ```Java 
 InPatient inPatient = new InPatient();
 Consultation consultation = new Consultation(inPatient); 

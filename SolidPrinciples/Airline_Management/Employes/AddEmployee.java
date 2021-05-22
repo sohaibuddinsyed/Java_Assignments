@@ -1,5 +1,6 @@
 package SolidPrinciples.Airline_Management.Employes;
 import java.util.Scanner;
+
 public class AddEmployee {
 
     private Employee e;

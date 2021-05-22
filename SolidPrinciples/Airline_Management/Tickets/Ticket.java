@@ -1,28 +1,32 @@
 package SolidPrinciples.Airline_Management.Tickets;
 import SolidPrinciples.Airline_Management.Passengers;
 
-public abstract class Ticket extends Passengers {
+public abstract class Ticket{
     private int ticketNumber;
-
+    private String ticketType;
+    private String passengerName;
     private String flightNumber;
     private String className;
 
     Ticket(){}
 
 
-    void setFlightNumber(String flightNumber){
+//    protected void setTicketType(String ticketType){ this.ticketType=ticketType;}
+    protected void setPassengerName(String passengerName){ this.passengerName=passengerName;}
+    protected void setFlightNumber(String flightNumber){
         this.flightNumber=flightNumber;
     }
-    void setclassName(String className){
+    protected void setClassName(String className){
         this.className=className;
     }
 
-    String getFlightNumber(){
+//    protected String getTicketType(){ return this.ticketType;}
+    protected String getFlightNumber(){
         return this.flightNumber;
     }
-    String getClassName(){
+    protected String getClassName(){
         return this.className;
     }
-
-    public abstract void book();
+    protected String getPassengerName(){ return this.passengerName;}
+    protected void book(){}
 }

@@ -1,6 +1,6 @@
-package SolidPrinciples.Airline_Management;
+package SolidPrinciples;
 
-public class Printer {
+public class ObjectPrinter {
     public static <T> void printer(String message, T ... args){
         System.out.println(message);
         for(T arg : args){

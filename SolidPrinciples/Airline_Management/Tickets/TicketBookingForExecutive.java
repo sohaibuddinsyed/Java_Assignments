@@ -1,9 +1,9 @@
 package SolidPrinciples.Airline_Management.Tickets;
 
-public class TicketBookingForExecutive extends TicketBookingService{
+public class TicketBookingForExecutive extends TicketBookingService {
 
     TicketBookingForExecutive(){
-        super.setclassName("Executive");
+
     }
     @Override
     public void book() {
@@ -11,7 +11,7 @@ public class TicketBookingForExecutive extends TicketBookingService{
 
     }
     public void customMeal(){
-
+        setClassName("Executive");
     }
 
 }

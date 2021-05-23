@@ -6,7 +6,23 @@ The project is composed of 4 main components.
 * Flights
 * Tickets
 
-
+### Structure of the program - 
+```
+package Employs -
+    class Employee
+    class Modified employee extends Employee
+    class AddEmployee, AddModifiedEmployee, ShowEmployeeDetails
+    
+package Tickets -
+    abstract class Ticket
+    abstract class TicketBookingService
+    class TicketBookingForEconomy, TicketBookingForExecutive extends TicketBookingService
+    class TicketBookingWithVoucher extends Ticket
+    
+package Flights - 
+    interfaces FlightChecks, UtilityChecks
+    class Flight(Employee,Ticket) implements FlightChecks, UtilityChecks
+```
 Each of these components correspond to actual Airline management elements. The various ways in which SOLID practices are followed is explained below.
 
 ## Single Responsibility Principle

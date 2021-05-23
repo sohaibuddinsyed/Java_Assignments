@@ -4,7 +4,7 @@ The above example demonstrates a use-case of SOLID principles. The project is co
 * Guests
 * Bookings
 
-Both of these components correspond to actual Hospital management elements. The various ways in which SOLID practices are followed is explained below.
+Both of these components correspond to actual Hotel management elements. The various ways in which SOLID practices are followed is explained below.
 
 ## Liskov Substitution Principle
 This principle implies that the super class must be substitutable for its subclass. It applies for the subclass to be in perfect behavioural synchronization with the superclass.

@@ -5,7 +5,21 @@ The project is composed of 4 main components.
 
 * Staff
 * Students
+### Structure of the program
+```
+package Staff -       
+    abstract class Employee
+    abstract TeachingStaff, NonTeachingStaff extends Employee
+    class Faculty extends TeachingStaff
+    class Attender extends NonTeachingStaff
+    class ShowEmployeeDetails
+    class AddEmployeeDetails
 
+package Student -   
+   abstract class Student
+   interface StudentDuties, Hosteler Duties
+   class HostelStudent, DayScholarStudent extends Student implement StudentDuties, Hosteler Duties
+```
 Each of these components correspond to actual School management elements. The various ways in which SOLID practices are followed is explained below.
 
 # Single Responsibility Principle

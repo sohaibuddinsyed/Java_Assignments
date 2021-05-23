@@ -4,6 +4,25 @@ The above example demonstrates a use-case of SOLID principles. The project is co
 * Guests
 * Bookings
 
+### Structure of the program is as follows:
+```
+package Guests -       
+    abstract class Guest
+    classes RegularGuest, VipGuest extends Guest
+    class ShowGuestDetails
+    class AddGuestDetails
+
+package Bookings -       
+    abstract class Booking
+    abstract class Room extends Booking
+    interfaces RegularRoomServices, VipRoomServices 
+    class RegularRoom extends Room implements RegularRoomServices
+    class VipRoom extends Room implements VipRoomServices
+    class Suite extends Booking 
+    class Suite extends Room implements RegularRoomServices, VipRoomServices
+ ```
+
+
 Both of these components correspond to actual Hotel management elements. The various ways in which SOLID practices are followed is explained below.
 
 ## Single Responsibility 

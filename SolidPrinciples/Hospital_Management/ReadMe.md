@@ -5,6 +5,21 @@ The project is composed of 2 main components.
 * Patients
 * Treatments
 
+### Structure of the program
+```
+package Patients -
+   abstract class Patient
+   class InPatient, OutPatient extends Patient
+   class AddPatientDetails, ShowPatientDetails
+
+package Treatments -
+    abstract class Doctor
+    abstract class Appointment extends Doctor
+    interface LabTests, CheckUp
+    class Consultation implements CheckUp extends Appointment
+    class Diagnostic implements LabTests extends Appointment
+    class Emergency extends Doctor
+```
 Both of these components correspond to actual Hospital management elements. The various ways in which SOLID practices are followed is explained below.
 
 ## Single Responsibility 

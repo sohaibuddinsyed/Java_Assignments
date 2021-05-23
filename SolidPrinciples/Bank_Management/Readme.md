@@ -13,7 +13,8 @@ According to this principle, each class should have a single resonsibility and m
 
 ## Dependency Inversion
 The principle of dependency inversion implies modules to be loosely coupled and abstracted so as to have maximum flexibility.
-* 
+* In package Airline_Management, both `SavingsAccount` and `DepositAccount` can take an object of any Account types.
+* Both these scenarios depict dependency inversion, abstraction and loose coupling between unrelated classes.
 
 ```java
 SavingsAccount savingsAccount = new SavingsAccount(new Account());

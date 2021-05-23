@@ -5,7 +5,7 @@ The project is composed of 4 main components.
 * Employees
 * Flights
 * Tickets
-* Passengers
+
 
 Each of these components correspond to actual Airline management elements. The various ways in which SOLID practices are followed is explained below.
 
@@ -28,7 +28,31 @@ This principle implies that the super class must be substitutable for its subcla
 commercial and
 invite based (vouchers). 
 * The commercial tickets are booked by `TicketBookingForEconomy` and `TicketBookingForExecutive` classes which extend the abstract `TicketBookingServiceClass`.
-* However, adding a different kind of TicketBookingForVoucher by extending the abstract TicketBookingServiceClass would violate the Liskov principle since `TicketBookingForVoucher` will have no payment methods involved and will differ in behaviour.
-* Hence, `TicketBookingForVoucher` extends the Ticket class.
+* However, adding a different kind of TicketBookingForVoucher by extending the abstract TicketBookingServiceClass would violate the Liskov principle since `TicketBookingWithVoucher` will have no payment methods involved and will differ in behaviour.
+* Hence, `TicketBookingWithVoucher` extends the Ticket class.
 
 
+## Interface Segregation principle
+According to this principle, larger interfaces should be split into smaller ones. This allows the implementing classes to be flexible with their methods of relevance.
+* In package Flights, the various kind of flight checks must be put into different interfaces.
+* `AeroplaneChecks` hold all essential aircraft checks.
+* `UtilityChecks` contains methods for utility and less essential checks.
+* This allows Flight type to implement both the interfaces and perform both type of checks.
+
+
+
+## Dependency Inversion
+The principle of dependency inversion implies modules to be loosely coupled and abstracted so as to have maximum flexibility.
+* In package Airline_Management, a flight object can take any `Employee`,`Ticket` subclasses.
+* Both the scenarios below depict dependency inversion while providing abstraction and lower coupling.
+```Java
+Employee employee = new Employee();
+TicketBookingForEconomy ticket = new TicketBookingForEconomy();
+Flight flight = new Flight(employee, ticket);
+ ```
+ or
+ 
+ ```Java
+ModifiedEmployee modifiedEmployee = new ModifiedEmployee ();
+TicketBookingForExecutive ticket = new TicketBookingForExecutive();
+Flight flight = new Flight(modifiedEmployee, ticket);

@@ -1,1 +1,1 @@
-# Java Assignments
+# SOLID Principles

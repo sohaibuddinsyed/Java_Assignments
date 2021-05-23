@@ -1,4 +1,4 @@
-package SolidPrinciples.Airline_Management.Employes;
+package SolidPrinciples.Airline_Management.Employs;
 import java.util.Scanner;
 
 public class AddModifiedEmployee extends AddEmployee{

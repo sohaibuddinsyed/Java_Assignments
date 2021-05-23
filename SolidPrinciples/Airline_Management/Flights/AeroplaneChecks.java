@@ -1,6 +1,6 @@
 package SolidPrinciples.Airline_Management.Flights;
 
-public interface FlightChecks {
+public interface AeroplaneChecks {
     void engineCheck();
     void electronicCheck();
     void mechanicalCheck();

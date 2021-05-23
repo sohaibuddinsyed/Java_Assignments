@@ -1,4 +1,4 @@
-package SolidPrinciples.Airline_Management.Employes;
+package SolidPrinciples.Airline_Management.Employs;
 
 public class ModifiedEmployee extends Employee{
     private String gender;

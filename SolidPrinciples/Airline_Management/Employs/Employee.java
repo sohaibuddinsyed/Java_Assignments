@@ -1,4 +1,4 @@
-package SolidPrinciples.Airline_Management.Employes;
+package SolidPrinciples.Airline_Management.Employs;
 
 public class Employee {
     private int id;
@@ -7,7 +7,9 @@ public class Employee {
     private int salary;
     private boolean onLeave;
 
-    public Employee(){}
+    public Employee(){
+        System.out.println("\nYou are now creating an employee.");
+    }
     Employee(int id, String name, String position, int salary){
         this.id=id;
         this.name=name;
@@ -15,7 +17,6 @@ public class Employee {
         this.salary=salary;
     }
 
-    // acessors for private data members
     void setId(int id){
         this.id=id;
     }
@@ -31,10 +32,11 @@ public class Employee {
     void setOnLeave(boolean onLeave){
         this.onLeave=onLeave;
     }
+
     int getId(){
         return this.id;
     }
-    String getName(){
+    public String getName(){
         return this.name;
     }
     String getPosition(){

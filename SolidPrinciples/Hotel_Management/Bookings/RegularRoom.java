@@ -9,7 +9,7 @@ public class RegularRoom extends Room implements RegularRoomServices{
         this.regularRoomNo=regularRoomNo;
     }
     int getRegularRoomNo(){return this.regularRoomNo;}
-
+    public void setRegularRoomNo(int roomNo){ this.regularRoomNo=roomNo;}
     @Override
     public void regularServices() {
         System.out.println("\nCheckIn ");

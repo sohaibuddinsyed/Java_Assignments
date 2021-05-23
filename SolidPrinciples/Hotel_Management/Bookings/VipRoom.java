@@ -7,7 +7,7 @@ public class VipRoom extends Room implements VipRoomServices{
     Scanner sc= new Scanner(System.in);
 
     int getVipRoomNo(){ return this.vipRoomNo;}
-    public void setVipRoomNo(int roomNo){ this.vipRoomNo=vipRoomNo;}
+    public void setVipRoomNo(int vipRoomNo){ this.vipRoomNo=vipRoomNo;}
 
     @Override
     public void vipServices() {

@@ -1,4 +1,4 @@
-package SolidPrinciples.Airline_Management.Employes;
+package SolidPrinciples.Airline_Management.Employs;
 import java.util.Scanner;
 
 public class AddEmployee {
@@ -17,7 +17,7 @@ public class AddEmployee {
         e.setName(sc.next());
         System.out.print("\nEnter Employee position:");
         e.setPosition(sc.next());
-        System.out.print("\nEnter Employee Salary");
+        System.out.print("\nEnter Employee Salary:");
         e.setSalary(sc.nextInt());
         System.out.print("\nIs employee on leave:");
         e.setOnLeave(sc.nextBoolean());

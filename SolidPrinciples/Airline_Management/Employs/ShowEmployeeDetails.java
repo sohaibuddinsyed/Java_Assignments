@@ -1,4 +1,4 @@
-package SolidPrinciples.Airline_Management.Employes;
+package SolidPrinciples.Airline_Management.Employs;
 
 import SolidPrinciples.ObjectPrinter;
 
@@ -11,7 +11,8 @@ public class ShowEmployeeDetails {
     }
     void showEmployeeDetails(Employee e){
         ObjectPrinter.printer("The employee details are :",
-                e.getId(), e.getName(), e.getPosition(),e.getSalary());
+                "\nId:"+e.getId(), "\nName:"+e.getName(), "\nPosition:"+e.getPosition(),
+                "\nSalary:"+e.getSalary());
 
     }
 }

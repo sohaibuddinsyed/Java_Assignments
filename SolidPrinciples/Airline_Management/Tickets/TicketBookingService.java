@@ -15,12 +15,14 @@ public abstract class TicketBookingService extends Ticket{
         this.transactionId=transactionId;
     }
 
-    TicketBookingService() {}
+    TicketBookingService() {
+        System.out.println("\nTicket booking service ");
+    }
 
     @Override
     public void book() {
-        System.out.println("Enter the passenger name: ");
-//        super.setPassengerName(sc.next());
+        System.out.println("\nEnter the passenger name: ");
+        super.setPassengerName(sc.next());
         System.out.println("Enter the flight number: ");
         super.setFlightNumber(sc.next());
     }

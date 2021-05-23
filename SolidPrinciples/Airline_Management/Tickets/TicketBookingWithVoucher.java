@@ -2,7 +2,7 @@ package SolidPrinciples.Airline_Management.Tickets;
 
 import java.util.Scanner;
 
-public class TicketBookingForVoucher extends Ticket{
+public class TicketBookingWithVoucher extends Ticket{
     private int voucherNumber;
     public static Scanner sc = new Scanner(System.in);
 

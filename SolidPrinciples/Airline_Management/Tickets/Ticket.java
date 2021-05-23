@@ -1,5 +1,4 @@
 package SolidPrinciples.Airline_Management.Tickets;
-import SolidPrinciples.Airline_Management.Passengers;
 
 public abstract class Ticket{
     private int ticketNumber;
@@ -21,7 +20,7 @@ public abstract class Ticket{
     }
 
 //    protected String getTicketType(){ return this.ticketType;}
-    protected String getFlightNumber(){
+    public String getFlightNumber(){
         return this.flightNumber;
     }
     protected String getClassName(){

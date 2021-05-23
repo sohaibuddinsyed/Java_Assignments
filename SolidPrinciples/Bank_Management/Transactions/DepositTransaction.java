@@ -10,7 +10,6 @@ public class DepositTransaction implements Deposit{
     static private DepositTransaction depositTransaction;
     static private Account account;
 
-
     public static void deposit(Account account){
         DepositTransaction.account = account;
         DepositTransaction.depositTransaction = new DepositTransaction();

@@ -7,17 +7,18 @@ import SolidPrinciples.School_Management.Students.DayScholarStudent;
 /*
 package School_Management
 
-package Staff       // S,O,L,D
-    abstract class Employee()
-    abstract TeachingStaff, NonTeachingStaff
-    class Faculty, Attenders
+package Staff -
+    abstract class Employee
+    abstract TeachingStaff, NonTeachingStaff extends Employee
+    class Faculty extends TeachingStaff
+    class Attender extends NonTeachingStaff
     class ShowEmployeeDetails
-    class AddEmployeeDetails
+    class AddFacultyDetails, AddAttenderDetails
 
-package Student     // I,D
-   abstract class Student()
+package Student -
+   abstract class Student
    interface StudentDuties, Hosteler Duties
-   class HostelStudent, DayScholarStudent extend Student implement StudentDuties, Hosteler Duties
+   class HostelStudent, DayScholarStudent extends Student implement StudentDuties, Hosteler Duties
 
 */
 

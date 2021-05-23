@@ -5,16 +5,18 @@ import SolidPrinciples.Airline_Management.Flights.Flight;
 import SolidPrinciples.Airline_Management.Tickets.*;
 
 /*
-package Employs
+package Employs -
     class Employee
     class Modified employee extends Employee
-    class Add, Employee, AddModifiedEmployee, ShowDetails
-package Tickets
+    class AddEmployee, AddModifiedEmployee, ShowEmployeeDetails
+
+package Tickets -
     abstract class Ticket
     abstract class TicketBookingService
     class TicketBookingForEconomy, TicketBookingForExecutive extends TicketBookingService
     class TicketBookingWithVoucher extends Ticket
-package Flight
+
+package Flights -
     interfaces FlightChecks, UtilityChecks
     class Flight(Employee,Ticket) implements FlightChecks, UtilityChecks
 */

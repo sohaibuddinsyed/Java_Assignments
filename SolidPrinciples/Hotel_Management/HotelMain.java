@@ -4,18 +4,20 @@ import SolidPrinciples.Hotel_Management.Bookings.*;
 import SolidPrinciples.Hotel_Management.Guests.*;
 
 /*
-package Guests          // S,O,D
+package Guests -
     abstract class Guest
-    classes RegularGuest, VipGuest
+    classes RegularGuest, VipGuest extends Guest
     class ShowGuestDetails
-    Class Add GuestDetails
+    class AddGuestDetails
 
-package Bookings        // I, L
+package Bookings -
     abstract class Booking
-    abstract class Room
+    abstract class Room extends Booking
     interfaces RegularRoomServices, VipRoomServices
-    class RegularRoom, VipRoom
-    class Suite
+    class RegularRoom extends Room implements RegularRoomServices
+    class VipRoom extends Room implements VipRoomServices
+    class Suite extends Booking
+    class Suite extends Room implements RegularRoomServices, VipRoomServices
  */
 
 public class HotelMain {

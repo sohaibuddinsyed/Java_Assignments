@@ -13,7 +13,7 @@ package Staff -
     class Faculty extends TeachingStaff
     class Attender extends NonTeachingStaff
     class ShowEmployeeDetails
-    class AddEmployeeDetails
+    class AddFacultyDetails, AddAttenderDetails
 
 package Student -   
    abstract class Student

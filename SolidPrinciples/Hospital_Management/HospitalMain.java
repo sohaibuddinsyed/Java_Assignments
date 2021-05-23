@@ -17,15 +17,15 @@ public class HospitalMain {
 
 /*
 
-package Patient:    // S,O,D
+package Patients -
    abstract class Patient
-   class InPatient, OutPatient extend Patient
+   class InPatient, OutPatient extends Patient
    class AddPatientDetails, ShowPatientDetails
 
-package Treatments  // I,L
+package Treatments -
     abstract class Doctor
-    interface LabTests, CheckUp
     abstract class Appointment extends Doctor
+    interface LabTests, CheckUp
     class Consultation implements CheckUp extends Appointment
     class Diagnostic implements LabTests extends Appointment
     class Emergency extends Doctor

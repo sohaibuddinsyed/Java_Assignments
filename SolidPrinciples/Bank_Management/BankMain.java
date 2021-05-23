@@ -8,20 +8,16 @@ import SolidPrinciples.Bank_Management.Transactions.SavingsTransaction;
 
 
 /*
-    Create an account. (Types of account -> Savings, FixedDeposit.)
-    Modify account details or type, print details.
+package Accounts -
+    abstract class Account
+    class Account, ModifiedAccount extends Account
+    class SavingsAccount(Account / ModifiedAccount), FixedDepositAccount(Account/ModifiedAccount)
+    class PrintAccountDetails (SavingsAccount / FixedDepositAccount)
+    class ModifyAccountDetails (SavingsAccount / FixedDepositAccount)
 
-    abstract class -> Account
-        classes -> Account, ModifiedAccount extends Account
-        classes -> SavingsAccount(Account or ModifiedAccount), FixedDepositAccount(Account or ModifiedAccount)
-        class   -> PrintAccountDetails ( SavingsAccount or FixedDepositAccount )
-        class   -> ModifyAccountDetails ( SavingsAccount or FixedDepositAccount )
-
-    Perform a transaction (Take account object).
-    Deposit, withdraw, transfer.
-
-        interfaces -> Withdraw, Deposit, Transfer
-        classes -> SavingsAccountTransaction(SavingsAccount), FixedDepositAccountTransaction(FixedDepositAccount)
+package Transactions -
+    interfaces Withdraw, Deposit
+    class SavingsAccountTransaction(SavingsAccount), FixedDepositAccountTransaction(FixedDepositAccount)
 
 */
 

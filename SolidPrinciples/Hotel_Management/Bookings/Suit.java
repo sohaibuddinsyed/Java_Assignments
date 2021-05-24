@@ -8,10 +8,11 @@ public class Suit extends Booking implements VipRoomServices, RegularRoomService
     Scanner sc= new Scanner(System.in);
 
     void setCapacity(int capacity){ this.capacity=capacity;}
+    public void setSuitNo(int suitNo) {this.suitNo= suitNo;}
 
     int getCapacity(){ return this.capacity;}
     public int getSuitNo(){ return this.suitNo;}
-    public void setSuitNo(int suitNo) {this.suitNo= suitNo;}
+
 
     @Override
     public void vipServices() {

@@ -6,6 +6,7 @@ import SolidPrinciples.Hotel_Management.Bookings.VipRoom;
 import java.util.Scanner;
 
 public class VipGuest extends Guest{
+
     private int vipRoomNo;
     private int noOfDays;
 

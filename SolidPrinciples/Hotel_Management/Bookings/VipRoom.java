@@ -3,6 +3,7 @@ package SolidPrinciples.Hotel_Management.Bookings;
 import java.util.Scanner;
 
 public class VipRoom extends Room implements VipRoomServices{
+
     private int vipRoomNo;
     Scanner sc= new Scanner(System.in);
 

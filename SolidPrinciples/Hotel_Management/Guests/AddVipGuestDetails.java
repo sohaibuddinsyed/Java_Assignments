@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AddVipGuestDetails {
     static Scanner sc= new Scanner(System.in);
+
     public static void addVipGuestDetails(VipGuest vipGuest){
         System.out.println("Enter the Vip room number :");
         vipGuest.setVipRoomNo(sc.nextInt());

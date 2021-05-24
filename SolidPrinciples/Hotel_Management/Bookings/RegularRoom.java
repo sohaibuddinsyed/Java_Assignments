@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class RegularRoom extends Room implements RegularRoomServices{
     private int regularRoomNo;
+
     Scanner sc= new Scanner(System.in);
+
     public RegularRoom(int regularRoomNo){
         this.regularRoomNo=regularRoomNo;
     }
     int getRegularRoomNo(){return this.regularRoomNo;}
+
     public void setRegularRoomNo(int roomNo){ this.regularRoomNo=roomNo;}
     @Override
     public void regularServices() {

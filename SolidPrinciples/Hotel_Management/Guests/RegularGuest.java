@@ -7,8 +7,10 @@ import SolidPrinciples.Hotel_Management.Bookings.VipRoom;
 import java.util.Scanner;
 
 public class RegularGuest extends Guest{
+
     private int regularRoomNo;
     private int noOfDays;
+
     Scanner sc= new Scanner(System.in);
 
     void setRegularRoomNo(int roomNo){ this.regularRoomNo=roomNo;}

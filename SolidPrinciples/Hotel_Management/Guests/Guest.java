@@ -6,6 +6,7 @@ public abstract class Guest {
     private String name;
     private String guestId;
     Scanner sc= new Scanner(System.in);
+
     public Guest(){
         System.out.println("Enter the guest's name:");
         setName(sc.next());

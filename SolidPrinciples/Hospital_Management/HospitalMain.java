@@ -6,6 +6,7 @@ import SolidPrinciples.Hospital_Management.Treatments.Consultation;
 
 public class HospitalMain {
    public static void main(String [] args){
+
        InPatient inPatient = new InPatient();
        AddInPatientDetails.addInPatientDetails(inPatient);
        ShowPatientDetails.showPatientDetails(inPatient);

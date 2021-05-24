@@ -22,7 +22,7 @@ package Flights -
 */
 
 public class AirlineMain {
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         Employee employee = new Employee();
         AddEmployee.addEmployee(employee);

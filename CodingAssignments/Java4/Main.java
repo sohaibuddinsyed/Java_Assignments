@@ -12,6 +12,7 @@ KYC form can only be filled within + or - 30 days of the signup anniversary
 
  */
 public class Main {
+
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args){
         Calendar calendar = Calendar.getInstance();

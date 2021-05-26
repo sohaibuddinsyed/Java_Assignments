@@ -1,6 +1,7 @@
 package CodingAssignments.Java12;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -29,7 +30,7 @@ public class Queries {
         averageAgeOfMaleAndFemaleStudents();
 
         System.out.print("\n6) Details of student with highest %:\n");
-        System.out.println(student.stream().filter(s -> s.getDepartment() == "Computer Science").max((s,a) -> (int) s.getPercentageTillDate()));
+        System.out.println(student.stream().collect(Collectors.maxBy(Comparator.comparingDouble(s -> s.getPercentageTillDate()))));
     };
     int[] noOfMaleAndFemaleStudents(){
         int [] noOfMaleAndFemaleStudents = new int[2];

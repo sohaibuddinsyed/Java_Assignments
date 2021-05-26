@@ -1,4 +1,5 @@
-package CodingAssignments.Java7;
+package CodingAssignments.Java7.Cycles;
+
 /*
 Create a Cycle class, with subclasses Unicycle, Bicycle and Tricycle.
 Add a balance( ) method to Unicycle and Bicycle, but not to Tricycle.
@@ -41,16 +42,3 @@ public class Cycle {
     }
 }
 
-class UniCycle extends Cycle{
-    public void balance(){
-        System.out.println("Balancing Unicycle");
-    }
-}
-class Bicycle extends Cycle{
-    public void balance(){
-        System.out.println("Balancing Bicycle");
-    }
-}
-class TriCycle extends Cycle{
-
-}

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Java12 {
+public class Main {
     public static void main(String[]args){
         ArrayList<Student> student = new ArrayList<>();
 
